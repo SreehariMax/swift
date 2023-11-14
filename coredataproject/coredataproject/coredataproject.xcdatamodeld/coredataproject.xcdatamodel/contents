@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagerStudent" representedClassName="ManagerStudent" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagerTeacher" inverseName="student" inverseEntity="ManagerTeacher"/>
+    </entity>
+    <entity name="ManagerTeacher" representedClassName="ManagerTeacher" syncable="YES" codeGenerationType="class">
+        <attribute name="department" optional="YES" attributeType="String"/>
+        <attribute name="student1" optional="YES" attributeType="String"/>
+        <attribute name="updatedTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="student" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagerStudent" inverseName="teacher" inverseEntity="ManagerStudent"/>
+    </entity>
+</model>

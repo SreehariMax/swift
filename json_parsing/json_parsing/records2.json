@@ -1,0 +1,17 @@
+{
+    "data":[
+  {
+    "title":"Fruits",
+    "items":["apple", "Orange","Grapes"]
+  },
+  {
+    "title":"States",
+    "items":["apple", "Orange","Grapes"]
+  },
+  {
+    "title":"Country",
+    "items":["apple", "Orange","Grapes"]
+  },
+]
+
+}
