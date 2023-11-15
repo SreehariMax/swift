@@ -60,3 +60,25 @@ if isPrime(number) {
     print("\(number) is not a prime number.")
 }
 
+//armstrong numbers
+
+
+
+func isArmstrongNumber(_ number: Int) -> String {
+    guard number >= 100 && number <= 999 else {
+        return "No"
+    }
+    var sum = 0
+    var tempNumber = number
+    while tempNumber > 0 {
+        let digit = tempNumber % 10
+        sum += digit * digit * digit
+        tempNumber /= 10
+    }
+    return sum == number ? "Yes" : "No"
+}
+let inputNumber = 153
+let result = isArmstrongNumber(inputNumber)
+print("Is \(inputNumber) an Armstrong number? \n\(result)")
+
+
